@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import {Provider} from "mobx-react";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './styles/main.scss';
+import {cartStore} from "./stores/cartStore";
+
+const stores = {
+    cartStore,
+};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <Provider {...stores}>
+          <App />
+      </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

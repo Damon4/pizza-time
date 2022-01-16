@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "title": "Пицца из половинок",
+    "description": "Соберите свою пиццу 35 см с двумя разными вкусами",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/7e32713298574ce8a48ec86d91baec05_292x292.jpeg",
+    "price": 600
+  },
+  {
+    "id": 2,
+    "title": "Индейка в мандаринах",
+    "description": "Пастрами из индейки, соус альфредо, мандарины, цитрусовый соус, моцарелла, смесь сыров чеддер и пармезан",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/e5c6c0eab4584aca913210aef749d6a7_292x292.jpeg",
+    "price": 545
+  },
+  {
+    "id": 3,
+    "title": "Фикси-пицца с игрушкой из коллекции",
+    "description": "Ветчина, картошечка, моцарелла, соус альфредо",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/1673ed1b5bea4482aef8a64827207b73_292x292.jpeg",
+    "price": 449
+  },
+  {
+    "id": 4,
+    "title": "Пепперони фреш",
+    "description": "Пикантная пепперони, увеличенная порция моцареллы, томаты, томатный соус",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/e9624d2bf1ae41598cd6635c0d3ed0f6_292x292.jpeg",
+    "price": 245
+  },
+  {
+    "id": 5,
+    "title": "Песто",
+    "description": "Цыпленок, соус песто, кубики брынзы, томаты, моцарелла, соус альфредо",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/9bd4c76d4c2548c090ac6ae5a1eabae6_292x292.jpeg",
+    "price": 445
+  },
+  {
+    "id": 6,
+    "title": "Карбонара",
+    "description": "Бекон, сыры чеддер и пармезан, моцарелла, томаты, красный лук, чеснок, соус альфредо, итальянские травы",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/7a0fac09c2264f8e8928f205c7acb5cf_292x292.jpeg",
+    "price": 445
+  },
+  {
+    "id": 7,
+    "title": "Додо Микс",
+    "description": "Бекон, цыпленок, ветчина, сыр блю чиз, сыры чеддер и пармезан, соус песто, кубики брынзы, томаты, красный лук, моцарелла, соус альфредо, чеснок, итальянские травы",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/ca0730a9b2d6457a899a41765555dc29_292x292.jpeg",
+    "price": 495
+  },
+  {
+    "id": 8,
+    "title": "Пепперони",
+    "description": "Пикантная пепперони, увеличенная порция моцареллы, томатный соус",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/80af1cf2138447b4a9afc30df6af712c_292x292.jpeg",
+    "price": 395
+  },
+  {
+    "id": 9,
+    "title": "Маргарита",
+    "description": "Увеличенная порция моцареллы, томаты, итальянские травы, томатный соус",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/6b61691078454b3793cdbfbbaa15cf58_292x292.jpeg",
+    "price": 345
+  },
+  {
+    "id": 10,
+    "title": "Ветчина и грибы",
+    "description": "Ветчина, шампиньоны, увеличенная порция моцареллы, томатный соус",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/26fa2948b6c74113afb9d09a3262fc26_292x292.jpeg",
+    "price": 345
+  },
+  {
+    "id": 11,
+    "title": "Гавайская",
+    "description": "Ветчина, ананасы, моцарелла, томатный соус",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/4749ca7de7e247daa69a685714f06aa3_292x292.jpeg",
+    "price": 395
+  },
+  {
+    "id": 12,
+    "title": "Диабло",
+    "description": "Острая чоризо, острый перец халапеньо, соус барбекю, митболы, томаты, сладкий перец, красный лук, моцарелла, томатный соус",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/2c7a83e078b44156a7ad774389ed7713_292x292.jpeg",
+    "price": 445
+  },
+  {
+    "id": 13,
+    "title": "Додо",
+    "description": "Бекон, митболы, пикантная пепперони, моцарелла, томаты, шампиньоны, сладкий перец, красный лук, чеснок, томатный соус",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/0d5410630b5c4f9eba6e8607423a587a_292x292.jpeg",
+    "price": 445
+  },
+  {
+    "id": 14,
+    "title": "Сырный цыпленок",
+    "description": "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, соус альфредо, чеснок",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/36785e0eea834174bf358ac2682aea4d_292x292.jpeg",
+    "price": 445
+  },
+  {
+    "id": 15,
+    "title": "Цыпленок ранч",
+    "description": "Цыпленок, ветчина, соус ранч, моцарелла, томаты, чеснок",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/0665a05313b1431588acec0ecfac0888_292x292.jpeg",
+    "price": 445
+  },
+  {
+    "id": 16,
+    "title": "Мясная",
+    "description": "Цыпленок, ветчина, пикантная пепперони, острая чоризо, моцарелла, томатный соус",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/b10dd95184eb49d39a739d75b8cbfeaf_292x292.jpeg",
+    "price": 445
+  },
+  {
+    "id": 17,
+    "title": "Аррива!",
+    "description": "Цыпленок, острая чоризо, соус бургер, сладкий перец, красный лук, томаты, моцарелла, соус ранч, чеснок",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/a2407468a4094e498d258f65bffa4c46_292x292.jpeg",
+    "price": 395
+  },
+  {
+    "id": 18,
+    "title": "Четыре сезона",
+    "description": "Увеличенная порция моцареллы, ветчина, пикантная пепперони, кубики брынзы, томаты, шампиньоны, итальянские травы, томатный соус",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/78e7d6286b3c4b4b9882e9422b8bdf01_292x292.jpeg",
+    "price": 395
+  },
+  {
+    "id": 19,
+    "title": "Чизбургер-пицца",
+    "description": "Мясной соус болоньезе, соус бургер, соленые огурчики, томаты, красный лук, моцарелла",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/40c9e7c8c01d4b29a816f2fd65d5bb60_292x292.jpeg",
+    "price": 395
+  },
+  {
+    "id": 20,
+    "title": "Колбаски барбекю",
+    "description": "Острая чоризо, соус барбекю, томаты, красный лук, моцарелла, томатный соус",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/20734006e66d427fb2cbb8fbb595b21e_292x292.jpeg",
+    "price": 395
+  },
+  {
+    "id": 21,
+    "title": "Фристайло",
+    "description": "Томаты, сладкий перец, красный лук, соус песто, митболы, моцарелла, томатный соус",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/67040d5b9c3a42e2a0deb93cca61f1ac_292x292.jpeg",
+    "price": 395
+  },
+  {
+    "id": 22,
+    "title": "Овощи и грибы",
+    "description": "Шампиньоны, томаты, сладкий перец, красный лук, маслины, кубики брынзы, моцарелла, томатный соус, итальянские травы",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/cf22475052d34b41b7f00792aa73dca4_292x292.jpeg",
+    "price": 395
+  },
+  {
+    "id": 23,
+    "title": "Четыре сыра",
+    "description": "Сыр блю чиз, сыры чеддер и пармезан, моцарелла, соус альфредо",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/1130292c8ffb4c34bb0a20619e65efb3_292x292.jpeg",
+    "price": 445
+  },
+  {
+    "id": 24,
+    "title": "Цыпленок барбекю",
+    "description": "Цыпленок, бекон, соус барбекю, красный лук, моцарелла, томатный соус",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/6efc2093bc244329918b9b44dc960852_292x292.jpeg",
+    "price": 445
+  },
+  {
+    "id": 25,
+    "title": "Двойная пепперони",
+    "description": "Двойная порция пикантной пепперони, увеличенная порция моцареллы, томатный соус",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/052c40e826264c6c8853cef189c8d34f_292x292.jpeg",
+    "price": 445
+  },
+  {
+    "id": 26,
+    "title": "Супермясная",
+    "description": "Пикантная пепперони, цыпленок, острая чоризо, бекон, митболы, моцарелла, томатный соус",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/51025107de954c6e93034b2fd6931d22_292x292.jpeg",
+    "price": 495
+  },
+  {
+    "id": 27,
+    "title": "Пицца-пирог",
+    "description": "Ананасы, брусника, сгущенное молоко",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/8e333265-1b36-4811-8e69-150022f9aab7.jpg",
+    "price": 345
+  },
+  {
+    "id": 28,
+    "title": "Ветчина и сыр",
+    "description": "Ветчина, моцарелла, соус альфредо",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/2a933294-138d-42ff-9ae3-9a3dda115aa0.jpg",
+    "price": 295
+  },
+  {
+    "id": 29,
+    "title": "Сырная",
+    "description": "Моцарелла, сыры чеддер и пармезан, соус альфредо",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/2c71cd53e50746279f7aa0f59c7ec50f_292x292.jpeg",
+    "price": 245
+  },
+  {
+    "id": 30,
+    "title": "Мексиканская",
+    "description": "Цыпленок, острый перец халапеньо, соус сальса, томаты, сладкий перец, красный лук, моцарелла, томатный соус",
+    "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/186dfa8511434e5eae09fc109b5a8498_292x292.jpeg",
+    "price": 445
+  }
+]

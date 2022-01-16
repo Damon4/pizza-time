@@ -1,0 +1,48 @@
+@use '../../styles/@use/variables' as *;
+
+.ButtonAddCart {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border-radius: $button-height-base;
+    padding: 0.25rem;
+    background-color: #fd912b;
+    color: #ffffff;
+    border: none;
+    height: $button-height-base;
+    user-select: none;
+}
+
+.ButtonAddCart__count {
+    padding: 0.5em 1rem;
+    margin: 0 0.5rem;
+}
+
+%ButtonAddCart__button {
+    width: $button-height-base - 0.5rem;
+    height: $button-height-base - 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #fd912b;
+    border-radius: 2.5rem;
+    line-height: 1;
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(1.1);
+    }
+
+    &:active {
+        filter: brightness(0.9);
+    }
+}
+
+.ButtonAddCart__decrement {
+    @extend %ButtonAddCart__button;
+}
+
+.ButtonAddCart__increment {
+    @extend %ButtonAddCart__button;
+}

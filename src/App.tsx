@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState} from 'react';
+import Container from "./components/Container";
+import PizzaItem, {Props as PizzaItemProps} from "./components/PizzaItem";
+import Header from "./components/Header";
+import classes from './App.module.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App: React.FC = () => {
+
+    const [pizzas, setPizzas] = useState<PizzaItemProps[]>([])
+
+    useEffect(() => {
+        import('./db.json').then((data) => {
+            setPizzas(data.default)
+        })
+    }, [])
+
+    return (
+        <div className={classes.App}>
+            <Header />
+                <Container>
+                    {pizzas.map((pizza) => {
+                        return (
+                            <PizzaItem key={pizza.id} {...pizza} />
+                        )
+                    })}
+                </Container>
+        </div>
+    );
 }
 
 export default App;

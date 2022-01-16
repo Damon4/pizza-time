@@ -1,0 +1,21 @@
+@use '../../styles/@use/variables' as *;
+
+.Button {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #fd912b;
+    color: #ffffff;
+    border: none;
+    height: $button-height-base;
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(1.1);
+    }
+
+    &:active {
+        filter: brightness(0.9);
+    }
+}

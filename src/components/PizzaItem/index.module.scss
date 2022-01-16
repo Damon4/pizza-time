@@ -1,0 +1,45 @@
+.PizzaItem {
+    flex: 0 1 25%;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.PizzaItem__Content {
+    h2 {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 20px;
+        color: rgb(92, 99, 112);
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.PizzaItem__Footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.PizzaItem__Price {
+    font-size: 20px;
+}
+
+.PizzaItem__Button {
+    font-size: 22px;
+}
