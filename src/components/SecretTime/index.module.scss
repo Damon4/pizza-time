@@ -1,0 +1,43 @@
+.SecretTime {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.SecretTime__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    iframe {
+        filter: drop-shadow(2px 4px 12px rgba(0, 0, 0, 0.62));
+        aspect-ratio: 16/9;
+        width: 800px;
+        height: auto;
+        max-width: 95%;
+    }
+}
+
+.SecretTime__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    color: #fd912b;
+    padding: 2rem;
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(1.1);
+    }
+
+    &:active {
+        filter: brightness(0.9);
+    }
+}
