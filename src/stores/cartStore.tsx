@@ -1,23 +1,30 @@
 import {action, computed, makeObservable, observable} from "mobx";
+import {PizzaTypeCart} from "../types/pizza";
+import {pizzaStore} from "./index";
 
 export class CartStore {
     constructor() {
         makeObservable(this, {
             pizzas: observable,
             count: computed,
+            price: computed,
             clear: action,
             decrement: action,
             increment: action,
         })
     }
 
-    pizzas: { id: number, count: number }[] = [
-        {id: 1, count: 2}
-    ];
+    pizzas: PizzaTypeCart[] = [];
 
     get count() {
         return this.pizzas.reduce((previousValue, currentValue) => {
             return previousValue + currentValue.count
+        }, 0);
+    }
+
+    get price() {
+        return this.pizzas.reduce((previousValue, currentValue) => {
+            return previousValue + currentValue.price * currentValue.count
         }, 0);
     }
 
@@ -47,14 +54,16 @@ export class CartStore {
     }
 
     private addPizza = (id: number) => {
-        let pizza = this.pizzas.find((item) => id === item.id)
-        if(pizza) {
+        const item = this.pizzas.find((item) => id === item.id)
+        const pizza = pizzaStore.find(id)
+
+        if(item) {
             this.increment(id)
         } else {
             this.pizzas.push({
-                id: id,
+                ...pizza,
                 count: 1,
-            });
+            } as PizzaTypeCart);
         }
     }
 

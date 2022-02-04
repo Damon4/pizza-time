@@ -1,31 +1,31 @@
 import React, {useEffect} from 'react';
-import Container from "./components/Container";
-import PizzaItem from "./components/PizzaItem";
+import {Route, Routes} from "react-router-dom";
+import {observer} from "mobx-react";
+import {pizzaStore} from "./stores";
 import Header from "./components/Header";
 import classes from './App.module.scss';
-import {pizzaStore} from "./stores";
-import {observer} from "mobx-react";
+import {HomePage} from "./pages/Home";
+import {CartPage} from "./pages/Cart";
 
 const App: React.FC = observer(() => {
-
-    const {pizzas} = pizzaStore
+    const [loading, setLoading] = React.useState(false)
 
     useEffect(() => {
         import('./db.json').then((data) => {
             pizzaStore.init(data.default)
+            setLoading(true)
         })
     }, [])
 
     return (
         <div className={classes.App}>
             <Header />
-            <Container>
-                {pizzas.map((pizza) => {
-                    return (
-                        <PizzaItem key={pizza.id} {...pizza} />
-                    )
-                })}
-            </Container>
+            {loading ? (
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/cart" element={<CartPage />} />
+                </Routes>
+            ) : 'Loading...'}
         </div>
     );
 })

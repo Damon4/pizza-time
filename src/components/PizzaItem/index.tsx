@@ -1,15 +1,12 @@
 import React from 'react';
 import classes from './index.module.scss'
 import {Button} from "../Button";
-import {inject, observer} from "mobx-react";
+import {observer} from "mobx-react";
 import {ButtonAddCart} from "../ButtonAddCart";
 import {cartStore} from "../../stores";
-import {PizzaType} from "../../types/pizza";
+import {PizzaTypeBase} from "../../types/pizza";
 
-const PizzaItem: React.FC<PizzaType> = inject(({cartStore}) => ({
-    pizzas: cartStore.pizzas,
-    addPizza: cartStore.addPizza,
-}))(observer((props) => {
+const PizzaItem: React.FC<PizzaTypeBase> = observer((props) => {
     const {
         id,
         title,
@@ -20,9 +17,7 @@ const PizzaItem: React.FC<PizzaType> = inject(({cartStore}) => ({
 
     const {pizzas, increment, decrement} = cartStore
 
-    const pizza = pizzas.find((pizza: { id: number; }) => pizza.id === id)
-
-    const count = !!pizza ? pizza?.count : 0
+    const count = pizzas.find((pizza: { id: number; }) => pizza.id === id)?.count ?? 0
 
     return <div className={classes.PizzaItem}>
         <div className={classes.PizzaItem__Content}>
@@ -31,22 +26,25 @@ const PizzaItem: React.FC<PizzaType> = inject(({cartStore}) => ({
             <p>{description}</p>
         </div>
         <div className={classes.PizzaItem__Footer}>
-            <h4 className={classes.PizzaItem__Price}>от {price}₽</h4>
             <h4 className={classes.PizzaItem__Button}>
                 {count ? (
                     <ButtonAddCart
                         increment={() => increment(id)}
                         decrement={() => decrement(id)}
                         count={count}
+                        price={price}
                     />
                 ) : (
-                    <Button
-                        onClick={() => increment(id)}
-                    >Добавить</Button>
+                    <>
+                        <h4 className={classes.PizzaItem__Price}>от {price}₽</h4>
+                        <Button
+                            onClick={() => increment(id)}
+                        >Добавить</Button>
+                    </>
                 )}
             </h4>
         </div>
     </div>
-}))
+})
 
 export default PizzaItem;

@@ -1,14 +1,14 @@
 import React from 'react';
 import classes from './index.module.scss'
 import CartButton from "../CartButton";
+import {Link} from "react-router-dom";
 
-export interface Props {
-}
-
-const Header: React.FC<Props> = (props) => {
+const Header: React.FC = () => {
     return <div className={classes.Header}>
         <div className={classes.Header__logo}>
-            <h1>PizzaTime</h1>
+            <h1>
+                <Link to="/">PizzaTime</Link>
+            </h1>
         </div>
         <div className={classes.Header__cart}>
             <CartButton />

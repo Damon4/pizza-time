@@ -1,5 +1,5 @@
 import {action, makeObservable, observable} from "mobx";
-import {PizzaType} from "../types/pizza";
+import {PizzaTypeBase} from "../types/pizza";
 
 export class PizzaStore {
     constructor() {
@@ -9,10 +9,14 @@ export class PizzaStore {
         })
     }
 
-    pizzas: PizzaType[] = [];
+    pizzas: PizzaTypeBase[] = [];
 
-    init = (pizzas: PizzaType[]) => {
+    init = (pizzas: PizzaTypeBase[]) => {
         this.pizzas = pizzas
+    }
+
+    find = (id: number) => {
+        return this.pizzas.find(f => f.id === id)
     }
 }
 

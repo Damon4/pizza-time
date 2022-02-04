@@ -1,20 +1,23 @@
-import React, {useState} from "react";
+import React from "react";
 import {Button} from "../Button";
-import { observer } from "mobx-react";
-import {SecretTime} from "../SecretTime";
+import {observer} from "mobx-react";
 import {cartStore} from "../../stores";
+import {useNavigate} from "react-router-dom";
 
 type Props = {
     count?: number
 }
 
 const CartButton: React.FC<Props> = observer((props) => {
-    const [show, setShow] = useState(false)
-    const {count} = cartStore
-    return <>
-        <Button onClick={() => setShow(true)}>{count ? `Корзина | ${count}` : 'Корзина'}</Button>
-        {show && <SecretTime show={show} onClose={() => {setShow(false)}} />}
-    </>
+    const {count, price} = cartStore
+    const navigate = useNavigate()
+    return <Button onClick={() => {navigate('/cart')}}>
+        {count
+            ? (
+                <><b>{price}</b>₽ | {count}</>
+            )
+            : 'Корзина'}
+    </Button>
 })
 
 export default CartButton
