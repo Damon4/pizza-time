@@ -2,18 +2,11 @@ import React from 'react';
 import classes from './index.module.scss'
 import {Button} from "../Button";
 import {inject, observer} from "mobx-react";
-import {useStores} from "../../hooks/useStore";
 import {ButtonAddCart} from "../ButtonAddCart";
+import {cartStore} from "../../stores";
+import {PizzaType} from "../../types/pizza";
 
-export interface Props {
-    id: number
-    title: string
-    description: string
-    image: string
-    price: number
-}
-
-const PizzaItem: React.FC<Props> = inject(({cartStore}) => ({
+const PizzaItem: React.FC<PizzaType> = inject(({cartStore}) => ({
     pizzas: cartStore.pizzas,
     addPizza: cartStore.addPizza,
 }))(observer((props) => {
@@ -25,7 +18,7 @@ const PizzaItem: React.FC<Props> = inject(({cartStore}) => ({
         price,
     } = props
 
-    const {cartStore: {pizzas, increment, decrement}} = useStores()
+    const {pizzas, increment, decrement} = cartStore
 
     const pizza = pizzas.find((pizza: { id: number; }) => pizza.id === id)
 

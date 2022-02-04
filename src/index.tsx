@@ -4,7 +4,7 @@ import {Provider} from "mobx-react";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './styles/main.scss';
-import {cartStore} from "./stores/cartStore";
+import {cartStore} from "./stores";
 
 const stores = {
     cartStore,

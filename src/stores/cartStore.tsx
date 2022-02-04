@@ -1,6 +1,6 @@
 import {action, computed, makeObservable, observable} from "mobx";
 
-class CartStore {
+export class CartStore {
     constructor() {
         makeObservable(this, {
             pizzas: observable,
@@ -63,4 +63,3 @@ class CartStore {
     }
 }
 
-export const cartStore = new CartStore();

@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {Button} from "../Button";
-import {useStores} from "../../hooks/useStore";
 import { observer } from "mobx-react";
 import {SecretTime} from "../SecretTime";
+import {cartStore} from "../../stores";
 
 type Props = {
     count?: number
@@ -10,7 +10,7 @@ type Props = {
 
 const CartButton: React.FC<Props> = observer((props) => {
     const [show, setShow] = useState(false)
-    const {cartStore: {count}} = useStores()
+    const {count} = cartStore
     return <>
         <Button onClick={() => setShow(true)}>{count ? `Корзина | ${count}` : 'Корзина'}</Button>
         {show && <SecretTime show={show} onClose={() => {setShow(false)}} />}
